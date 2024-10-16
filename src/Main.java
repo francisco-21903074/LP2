@@ -59,7 +59,8 @@ public class Main {
     public static int f6_max (int[] array) {
         if (array == null)
             throw new IllegalArgumentException("array nao pode ser null");
-        int max = array[0];
+        int max;
+        max = array[0];
         for (int i = 0; i < array.length; i++) {
             if (array[i] > max) {
                 max = array[i];
